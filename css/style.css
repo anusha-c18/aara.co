@@ -24,19 +24,27 @@
     text-decoration: none;
     font-size: 20px;
     font-family:'Times New Roman', Times, serif;
-    color: rgb(243 135 68);
+    color: rgb(0, 0, 0);
 }
 
-.navitem a:hover{
+.nav_item a:hover{
     text-decoration: none;
-    color: rgb(255, 82, 70);
-    font-size: 18px;
+    color: #fe904b;
 }
-
-/* carousel */
-
 
 /* Slideshow container */
+
+.outer{
+  border: solid 2px white;
+  border-radius: 10px;
+  margin: 0px 10px 13px 10px;
+}
+
+.slideshow-outer{
+  /* background-color: rgb(224 255 234); */
+  background-color: #f6feff;
+  padding-top: 14px;
+}
 
 .slideshow-container {
     max-width: 90%;
@@ -62,7 +70,7 @@
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: #fe904b;
+    color: #0e7183;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
@@ -78,19 +86,24 @@
   
   /* On hover, add a black background color with a little bit see-through */
   .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.39);
+    color:white;
+    transition: 0.2s ease;
   }
   
   /* The dots/bullets/indicators */
   .dotty{
-      margin:-6px 0;
+    position: absolute;
+    width: -webkit-fill-available;
+    margin: -52px auto;
+    align-self: center;
   }
   
   .dot {
     cursor: pointer;
     height: 10px;
     width: 10px;
-    margin: 2px 2px 20px 2px;
+    margin: 2px 2px 5px 2px;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
@@ -108,13 +121,20 @@
 
   /* Categories */
 
+  .title{
+    margin:auto;
+    margin-top:13px;
+    margin-bottom: -13px;
+    color: rgb(243 135 68);
+    font-size: xx-large;
+  }
+
   .categories{
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      color: rgb(243 135 68);
-      font-size: xx-large;
+      background-color: #f7f7f7;
   }
 
   .boxes{
@@ -127,7 +147,7 @@
   }
 
   .container{
-      background-color: black;
+      background-color: rgb(255, 255, 255);
       width:300px;
       height:370px;
       display: flex;
@@ -145,10 +165,75 @@
   }
 
   .label{
-    border: solid #fe904b;
+    border: solid #fc8f4b;
     border-width: 6px 0px 0px 20px;
-    color: white;
+    color: black;
     padding: 8px 7px 8px 15px;
     font-family:system-ui;
     letter-spacing: 5px;
   }
+
+  /* contact us */
+  
+.contact_outer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  background-color: #fffff0;
+}
+
+.form{
+  background-color: #1a6774;
+  margin: 26px 20px 20px 20px;
+  display: flex;
+  border-radius: 5px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-self: center;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  margin: 15px 10px 0px 10px;
+}
+
+.row input, textarea{
+  resize:none;
+  border:rgb(223 212 255) solid 2px;
+  padding: 10px 10px;
+  border-radius: 15px;
+  margin: 0px 10px;
+  align-self: stretch;
+  flex-grow:1;
+  font-family: system-ui;
+}
+
+.row button{
+  border: 2px solid rgb(223 212 255);
+  padding: 6px 5px;
+  border-radius: 12px;
+  margin: 0px 10px;
+  font-family: system-ui;
+  background-color: #ffffff;
+  color: #686868;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.buttons{
+  margin:15px 10px;
+}
+
+.row button:hover {
+  background-color: #fc8f4b;
+  border-color: #fc8f4b;
+  color:black;
+  transition: 0.4s ease; 
+}
